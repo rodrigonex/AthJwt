@@ -24,6 +24,10 @@
 * /auth
   * The route created to validate the email and password is to return a json with id, user email and a token to be used as authorize.
   * If you enter the wrong email address or password, you will get the error 401 do not authorize.
+* /users
+ * Lists all created users.
+ * It is necessary to pass the token generated in the Auth route in Bearer.
+ * If the token is invalid or expired, it will display error 401.
   
   
 
